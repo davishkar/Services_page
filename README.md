@@ -1,6 +1,7 @@
 # Avishkar Deshmukh's Services Website
 
-Welcome to the **Avishkar Deshmukh's Services** website. This project showcases Avishkar Deshmukh’s web development and design services, offering a range of skills including web development, graphic design, logo creation, SEO, writing, and editing.[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=livechat)](https://davishkar.github.io/Services_page/)
+Welcome to the **Avishkar Deshmukh's Services** website. This project showcases Avishkar Deshmukh’s web development and design services, offering a range of skills including web development, graphic design, logo creation, SEO, writing, and editing.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=livechat)](https://davishkar.github.io/Services_page/)
 
 ## Features
 
