@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avishkar Deshmukh's Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <img src="images/profile-pic (2).png" alt="Profile Picture" class="profile-img">
+            <h1>Avishkar Deshmukh's Services</h1>
+            <div class="actions">
+                <a class="request-btn" href="https://www.linkedin.com/services/page/2819523305150a4092/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-bag-check"></i> Request Services
+                </a>
+                <a class="message-btn" href="https://api.whatsapp.com/send?phone=9146964882&amp;text=Hi,%20I%20am%20[YourName]%2C%20and%20I%20am%20interested%20in%20your%20services.%20You%20can%20reach%20me%20at%20[YourEmail].%20Could%20you%20please%20provide%20more%20details%3F" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-chat-left-dots"></i> Message
+                </a>
+                <div class="dropdown">
+                    <button class="more-btn">...</button>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="bi bi-file-earmark-person"></i> View Portfolio</a>
+                        <a href="#"><i class="bi bi-envelope"></i> Contact via Email</a>
+                        <a href="#"><i class="bi bi-calendar"></i> Schedule a Call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <section class="about-section">
+            <h2>About</h2>
+            <p>I’m <strong>Avishkar Deshmukh</strong>, a dedicated beginner web developer eager to create responsive,
+                user-friendly websites.</p>
+            <p>Proficient in <strong>HTML, CSS, and JavaScript</strong>, I focus on clean, maintainable code and
+                engaging user experiences.</p>
+            <p>I continuously learn and stay updated with industry trends to deliver high-quality projects.</p>
+            <p>Let's collaborate to bring your web ideas to life!</p>
+            <p>Connect with me on email me at
+                <a href="mailto:deshmukhavishkar2@gmail.com">
+                    <i class="bi bi-envelope"></i> deshmukhavishkar2@gmail.com
+                </a>.
+            </p>
+
+            <div class="availability">
+                <span><i class="bi bi-geo-alt-fill"></i></i> Available</span>
+                <p>Remote</p>
+            </div>
+
+            <div class="pricing">
+                <span><i class="bi bi-cash"></i> Pricing</span>
+                <p>Starting at $5.00/hr</p>
+            </div>
+        </section>
+        <section class="services-section">
+            <h2>Services provided</h2>
+            <div class="services-list row">
+                <div class="col-md-4 col-sm-6">
+                    <span class="service"><i class="bi bi-code-slash"></i> Web Development</span>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <span class="service"><i class="bi bi-palette"></i> Graphic Design</span>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <span class="service"><i class="bi bi-brush"></i> Logo Design</span>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <span class="service"><i class="bi bi-search"></i> SEO</span>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <span class="service"><i class="bi bi-pencil"></i> Writing</span>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <span class="service"><i class="bi bi-scissors"></i> Editing</span>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <span class="service"><i class="bi bi-laptop"></i> Web Design</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="media-section">
+            <h2>Media</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="images/web_designing.png" alt="Web Designing" style="width:100%"
+                        onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/landing_page.png" alt="Landing Page" style="width:100%"
+                        onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/logo_design.png" alt="Logo Design" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/seo.png" alt="SEO" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/content creation.png" alt="Content Creation" style="width:100%"
+                        onclick="myFunction(this);">
+                </div>
+            </div>
+
+            <!-- Modal to show expanded image -->
+            <div class="modal" id="imgModal">
+                <span class="closebtn" onclick="closeModal()">&times;</span>
+                <img id="expandedImg">
+                <div id="imgtext"></div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

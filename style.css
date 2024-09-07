@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+a, u {
+    text-decoration: none;
+    }
+/* Wrapper for the container sections */
+.container-wrapper {
+   
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Individual container styling */
+.container {
+    flex: 1 1 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Headline styling */
+.container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-family: 'Zeyada', cursive;
+    color: #333;
+}
+
+/* Action buttons container */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Button styling */
+.request-btn, .message-btn, .more-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Request button */
+.request-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.request-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Message button */
+.message-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.message-btn:hover {
+    background-color: #218838;
+}
+
+/* More button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    min-width: 200px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.more-btn:hover + .dropdown-content, .dropdown-content:hover {
+    display: block;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* About Section container */
+.about-section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* About Section heading */
+.about-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Zeyada', cursive; /* Apply preferred Google Font */
+}
+
+/* Paragraphs styling */
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Styling for anchor tags */
+.about-section a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-section a:hover {
+    text-decoration: underline;
+}
+
+/* Icons inside the paragraphs */
+.about-section i {
+    margin-right: 8px;
+}
+
+/* Availability and Pricing containers */
+.about-section .availability, .about-section .pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.about-section .availability span, .about-section .pricing span {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.about-section .availability p, .about-section .pricing p {
+    margin: 0;
+    color: #333;
+}
+
+/* Hover effect for icons and links */
+.about-section .availability span i, .about-section .pricing span i {
+    color: #28a745;
+}
+
+.about-section .availability:hover i, .about-section .pricing:hover i {
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 15px;
+    }
+    
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Container for the services section */
+.services-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    margin-bottom: 30px;
+    font-family: 'Zeyada', cursive; /* Apply preferred Google Font */
+}
+
+/* Services list styling */
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.service {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 18px;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.service i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.service:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.service:hover i {
+    color: white;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .service {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+
+/* Container for the media section */
+.media-section {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.media-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Zeyada', cursive; /* Apply preferred Google Font */
+}
+
+/* Row for the images */
+.media-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Each column within the row */
+.media-section .column {
+    flex: 1 1 200px;
+    max-width: 23%; /* Adjust column width */
+}
+
+.media-section .column img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.media-section .column img:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Popup/Modal background (hidden by default) */
+.media-section .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* The expanded image */
+.media-section .modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+/* Close button for the expanded image */
+.media-section .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.media-section .closebtn:hover {
+    color: red;
+}
+
+/* Text displayed under the expanded image */
+.media-section #imgtext {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
